@@ -9,14 +9,8 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="MillViewMemories">
 
-    <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-        <vm:MainViewModel />
-    </Design.DataContext>
-
-    <TextBox Text="{Binding Greeting}"
-             HorizontalAlignment="Center"
-             VerticalAlignment="Center" />
+    <Grid x:Name="Host">
+        <Grid x:Name="Shell" />
+    </Grid>
 
 </Window>
